@@ -46,10 +46,10 @@ void setup() {
   pinMode( fSharpPin, OUTPUT ); // setup the pin to output F#
   pinMode( eNaturalPin, OUTPUT ); // setup the pin to output E
   pinMode( bNaturalPin, OUTPUT ); // setup the pin to output B
-  digitalWrite( gSharpPin, LOW ); // set everything low.
-  digitalWrite( fSharpPin, LOW ); 
-  digitalWrite( eNaturalPin, LOW );
-  digitalWrite( bNaturalPin, LOW );
+  digitalWrite( gSharpPin, chimeRelaxState ); // silence everything
+  digitalWrite( fSharpPin, chimeRelaxState ); 
+  digitalWrite( eNaturalPin, chimeRelaxState );
+  digitalWrite( bNaturalPin, chimeRelaxState );
 }
 
 // Once setup() finishes, the loop begins.
