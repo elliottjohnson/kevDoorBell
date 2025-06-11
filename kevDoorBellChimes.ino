@@ -58,7 +58,7 @@ void loop() {
   delay( loopDelay ); // Wait some time before checking again.. Not sure if this is good or not.
 }
 
-// Checks the doorbell state and rings the bell of run, otherwise it just returns to loop().
+// Checks the doorbell state and rings the bell if rung, otherwise it just returns to loop().
 void checkDoorBell() {
   readDoorBellState(); // Read the current state of the door bell momentary switch.
 
